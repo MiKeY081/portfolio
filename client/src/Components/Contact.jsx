@@ -56,8 +56,18 @@ const Contact = () => {
           </button>
         </form>
         <div className="flex lg:flex-row flex-col justify-center  items-center gap-20 w-1/2 ">
-          <a href="" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">View CV </a>
-          <a  href="mailto:kcmadhu081@gmail.com" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Hire Me</a>
+          <a
+            href=""
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+          >
+            View CV{" "}
+          </a>
+          <a
+            href="mailto:kcmadhu081@gmail.com"
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+          >
+            Hire Me
+          </a>
         </div>
       </div>
     </div>
