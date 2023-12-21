@@ -16,11 +16,9 @@ const Projects = () => {
           viewport={{ once: true }}
           className="grid grid-cols-3 gap-20 "
         >
-          <div>
             {projects.map((project, index) => (
               <Card project={project} key={index} index={index} />
             ))}
-          </div>
         </motion.div>
       </AnimatePresence>
     </div>
