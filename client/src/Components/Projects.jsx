@@ -8,7 +8,6 @@ const Projects = () => {
     <div className="projects pt-16 min-h-screen px-32 ">
       <h1 className="text-3xl text-center font-bold mb-20">My Projects</h1>
       <AnimatePresence>
-        \
         <motion.div
           initial={{ opacity: 0, scale: 0, x: -700 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
