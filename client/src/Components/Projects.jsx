@@ -10,7 +10,8 @@ const Projects = () => {
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 0, x: -700 }}
-          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          exit={{ opacity: 0, scale: 0, x: -700 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="grid grid-cols-3 gap-20 "
