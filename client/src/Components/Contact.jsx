@@ -2,15 +2,15 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="contact bg-black p-12 pt-16 min-h-screen min-w-screen" id="contact">
+    <div
+      className="contact bg-black p-12 pt-16 min-h-screen min-w-screen "
+      id="contact"
+    >
       <h2 className="text-6xl font-semibold mb-6 text-center">Contact Me</h2>
       <div className="flex">
-        <form className="w-1/2  p-8 lg:px-20 rounded-lg shadow-md ">
+        <form className="w-1/2  p-8 lg:px-20 rounded-lg shadow-md shadow-white ">
           <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium "
-            >
+            <label htmlFor="name" className="block text-lg font-medium ">
               Name
             </label>
             <input
@@ -21,10 +21,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium"
-            >
+            <label htmlFor="email" className="block text-lg font-medium">
               Email
             </label>
             <input
@@ -35,10 +32,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium ">
-            
+            <label htmlFor="message" className="block text-lg font-medium ">
               Message
             </label>
             <textarea
@@ -57,10 +51,11 @@ const Contact = () => {
         </form>
         <div className="flex lg:flex-row flex-col justify-center  items-center gap-20 w-1/2 ">
           <a
-            href=""
+            href="https://res.cloudinary.com/deqtuwtw5/image/upload/v1703339507/qdnczcsag3c9xw5jfzix.png"
             className="bg-green-600  px-4 py-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring focus:border-blue-300"
+            target="blank"
           >
-            View CV{" "}
+            View CV
           </a>
           <a
             href="mailto:kcmadhu081@gmail.com"
