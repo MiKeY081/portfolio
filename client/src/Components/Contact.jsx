@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -6,9 +7,15 @@ const Contact = () => {
       className="contact bg-black p-12 pt-16 min-h-screen min-w-screen "
       id="contact"
     >
-      <h2 className="text-6xl font-semibold mb-6 text-center">Contact Me</h2>
+      <h2 className="text-6xl font-semibold mb-16 text-center">Contact Me</h2>
       <div className="flex">
-        <form className="w-1/2  p-8 lg:px-20 rounded-lg shadow-md shadow-white ">
+      <motion.div
+          initial={{ opacity: 0, scale: 0, left: "-200px" }}
+          whileInView={{ opacity: 1, scale: 1, left: "0px" }}
+          transition={{ duration: 0.6 }}
+          className="relative w-1/2"
+        >
+        <form className=" relative p-8 lg:px-20 rounded-lg shadow-md shadow-white ">
           <div className="mb-4">
             <label htmlFor="name" className="block text-lg font-medium ">
               Name
@@ -49,6 +56,7 @@ const Contact = () => {
             Submit
           </button>
         </form>
+        </motion.div>
         <div className="flex lg:flex-row flex-col justify-center  items-center gap-20 w-1/2 ">
           <a
             href="https://res.cloudinary.com/deqtuwtw5/image/upload/v1703339507/qdnczcsag3c9xw5jfzix.png"
