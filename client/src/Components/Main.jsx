@@ -1,17 +1,26 @@
 import React from "react";
-import mikeyImage from "../assets/photos/mikie.jpg";
+import mikeyImage from "../../public/photos/mikie.jpg";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
+import {
+  FaYoutube,
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const Main = () => {
   return (
-    <div className=" main pt-16 px-20 max-w-screen h-[100vh] flex bg-gradient-to-r from-slate-400 to-black p-4">
-      <div className="left w-2/3 text-3xl font-bold flex flex-col justify-center">
-        <h1>Welcome!!!</h1>
+    <div className=" main bg-black pt-16 px-20 pb-8 max-w-screen h-[100vh] flex  overflow-hidden">
+      <div className="left w-2/3 font-bold flex flex-col justify-center">
+        <h1 className="text-5xl">Welcome!!!</h1>
         <br />
-        <div className="flex flex-nowrap">
-          <span className="font-semibold">I am &nbsp;</span>
-          <div className="inline-block text-green-500 text-3xl">
+        <div className="flex items-center mb-16">
+          <span className="font-semibold text-4xl whitespace-nowrap">I am &nbsp;</span>
+          <div className="inline-block text-green-600 hover:text-green-700  text-6xl ">
             <Typewriter
               options={{
                 strings: ["Madhu kunwar", "A Web Developer"],
@@ -22,15 +31,59 @@ const Main = () => {
             />
           </div>
         </div>
+        <div className="text-lg">
+          I am a passionate Software Engineering student specializing in React, NextJs, JavaScript,
+          Node.js, and MongoDB. Driven by inspiration drawn from the captivating
+          worlds of cybersecurity and web development, my purpose is to make
+          positive contributions to my nation and humanity. Fueled by a fervor
+          for chess and guided by a divine perspective, I enthusiastically
+          explore the limitless potential that technology unfolds.
+        </div>
+            <a href="#contact" className="bg-green-600 text-white rounded-lg px-4 py-2 w-fit mt-5 mb-2">Contact Me</a>
+            <div className="flex space-x-4">
+            <a
+              href="mailto:your.kcmadhu081@gmail.com"
+              className="text-blue-400 hover:text-blue-300 transition duration-300"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://www.facebook.com/Ryuga.081"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition duration-300"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/madhu_kunwar081"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition duration-300"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://github.com/MiKeY081"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition duration-300"
+            >
+              <FaGithub />
+            </a>
+          </div>
       </div>
       <motion.div
-        initial={{ opacity: 0, scale: 0, x: -700 }}
-        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        initial={{ opacity: 0, scale: 0, right: "-200px" }}
+        whileInView={{ opacity: 1, scale: 1, right: "0px" }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="home right h-screen flex justify-center items-center"
+        className="home right h-screen flex justify-center items-center relative"
       >
-        <img src={mikeyImage} alt="" className="relative -top-20 h-screen" />
+        <img
+          src={mikeyImage}
+          alt=""
+          className="relative -top-20 h-screen scale-150"
+        />
       </motion.div>
     </div>
   );

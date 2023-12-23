@@ -8,7 +8,7 @@ import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth bg-black text-white text-2xl'>
     <Header/>
       <Main/>
       <About/>

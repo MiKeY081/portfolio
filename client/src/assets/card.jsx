@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import {motion} from "framer-motion"
 export function Card({ project, index }) {
   return (
-    <div
-      // initial={{ opacity: 0, scale: 0, x: -700 }}
-      // whileInView={{ opacity: 1, scale: 1, x: 10 }}
-      // transition={{ duration: (index+1)/5}}
-      // exit={{ opacity: 0, scale: 0, x: -700 }}
+    <motion.div
+    initial={{ opacity: 0, bottom: "-200px" }}
+    whileInView={{ opacity: 1, bottom: "0px" }}
+    transition={{
+        duration: 0.5,
+        delay: 0.3,
+        bounce: 1,
+    }}
       className="relative h-[400px] w-[300px] rounded-md"
     >
       <img
@@ -26,6 +29,6 @@ export function Card({ project, index }) {
           Visit Link &rarr;
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
