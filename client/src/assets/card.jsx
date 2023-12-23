@@ -8,7 +8,7 @@ export function Card({ project, index }) {
     whileInView={{ opacity: 1, bottom: "0px" }}
     transition={{
         duration: 0.5,
-        delay: 0.3,
+        delay: (index+4)/10,
         bounce: 1,
     }}
       className="relative h-[400px] w-[300px] rounded-md"
