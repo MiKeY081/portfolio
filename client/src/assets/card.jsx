@@ -14,7 +14,7 @@ export function Card({ project, index }) {
       className="relative h-[400px] w-[300px] rounded-md"
     >
       <img
-        src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+        src={project.image}
         alt={project.title}
         className="z-0 h-full w-full rounded-md object-cover"
       />
@@ -23,8 +23,9 @@ export function Card({ project, index }) {
         <h1 className="text-lg font-semibold text-white">{project.title}</h1>
         <p className="mt-2 text-sm text-gray-300">{project.description}</p>
         <Link
-          href={project.link}
+          to={project.link}
           className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white"
+          target="blank"
         >
           Visit Link &rarr;
         </Link>

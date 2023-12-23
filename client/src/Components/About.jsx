@@ -17,7 +17,7 @@ const AboutMe = () => {
         className="w-2/5 flex justify-center items-center relative"
       >
         <img
-          src="/photos/mikey.jpg"
+          src="/photos/aboutimage.jpg"
           alt=""
           className="relative w-full rounded-full"
         />

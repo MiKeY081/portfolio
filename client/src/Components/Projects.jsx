@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "../assets/card";
-import { motion } from "framer-motion";
 import { projectData } from "../assets/constant";
 const Projects = () => {
   const projects = projectData;
