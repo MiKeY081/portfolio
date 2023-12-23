@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = projectData;
   return (
     <div className="projects pt-16 min-h-screen px-32 bg-black">
-      <h1 className="text-3xl text-center font-bold mb-20">My Projects</h1>
+      <h1 className="text-center font-bold mb-20 text-6xl">My Projects</h1>
         <div
           className="grid grid-cols-3 gap-20 "
         >

@@ -24,7 +24,7 @@ function Header() {
               <Link
                 to="about"
                 smooth
-                className="hover:font-bold text-lg hover:text-blue-300 transition-all duration-200"
+                className="relative -top-1 hover:font-bold text-lg hover:text-blue-300 transition-all duration-200"
               >
                 About
               </Link>

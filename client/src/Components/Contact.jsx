@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="contact bg-black p-12 pt-16 min-h-screen min-w-screen" id="contact">
-      <h2 className="text-3xl font-semibold mb-6 text-center">Contact Me</h2>
+      <h2 className="text-6xl font-semibold mb-6 text-center">Contact Me</h2>
       <div className="flex">
         <form className="w-1/2  p-8 lg:px-20 rounded-lg shadow-md ">
           <div className="mb-4">
@@ -17,7 +17,7 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
-              className="mt-1 bg-slate-500 p-2 w-full border text-white outline-none  border-gray-500 rounded-md focus:outline-none "
+              className="mt-1 bg-slate-800 p-2 w-full border text-white outline-none  border-gray-500 rounded-md focus:outline-none "
             />
           </div>
           <div className="mb-4">
@@ -31,7 +31,7 @@ const Contact = () => {
               type="email"
               id="email"
               name="email"
-              className="mt-1 bg-slate-500 p-2 w-full border border-gray-500 text-white outline-none  rounded-md focus:outline-none "
+              className="mt-1 bg-slate-800 p-2 w-full border border-gray-500 text-white outline-none  rounded-md focus:outline-none "
             />
           </div>
           <div className="mb-4">
@@ -45,7 +45,7 @@ const Contact = () => {
               id="message"
               name="message"
               rows="4"
-              className="mt-1 bg-slate-500 p-2 w-full border border-gray-500 rounded-md focus:outline-none  text-white outline-none "
+              className="mt-1 bg-slate-800 p-2 w-full border border-gray-500 rounded-md focus:outline-none  text-white outline-none "
             ></textarea>
           </div>
           <button
