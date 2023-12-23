@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 function Header() {
   return (
     <>
-      <div className="flex sticky top-0 justify-between items-center text-white p-2 bg-slate-800 h-16">
+      <div className="flex sticky top-0 z-20 justify-between items-center text-white p-2 bg-slate-800 h-16">
         <Link
           to="main"
           smooth
