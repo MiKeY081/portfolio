@@ -11,9 +11,13 @@ const AboutMe = () => {
       <h2 className="text-3xl font-semibold mb-16 text-center">About Me</h2>
      
       <motion.div
-        initial={{ opacity: 0, scale: 0, x: -700 }}
-        whileInView={{ opacity: 1, scale: 1, x: 0 }}
-        transition={{ duration: 0.3 }}
+        initial={{ opacity: 0,scale: 0,  bottom: "100px" }}
+        whileInView={{ opacity: 1,scale: 1, bottom: "0px" }}
+        transition={{
+            duration: 0.5,
+            delay: 0.3,
+            bounce: 1,
+        }}
         className="con text-xl"
       >
         <p className="mb-4 ">
