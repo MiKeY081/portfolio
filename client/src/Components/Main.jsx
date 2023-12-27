@@ -25,7 +25,7 @@ const Main = () => {
           className="relative lg:h-screen lg:scale-150 -top-20 "
         />
       </motion.div>
-      <div className="left lg:w-2/3 font-bold flex flex-col sm:text-center justify-center">
+      <div className="left lg:w-2/3 font-bold flex flex-col sm:text-center justify-center items-start">
         <h1 className="text-5xl">Welcome!!!</h1>
         <br />
         <div className="flex items-center mb-16">
@@ -43,7 +43,7 @@ const Main = () => {
             />
           </div>
         </div>
-        <div className="text-lg">
+        <div className="text-lg mb-16">
           I am a passionate Software Engineering student specializing in React,
           NextJs, Tailwind, CSS, JavaScript, Node.js, and MongoDB. Driven by inspiration drawn
           from the captivating worlds of cybersecurity and web development, my
