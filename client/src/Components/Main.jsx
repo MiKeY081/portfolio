@@ -12,8 +12,20 @@ import {
 
 const Main = () => {
   return (
-    <div className=" main bg-black pt-16 px-20 pb-8 max-w-screen h-[100vh] flex  overflow-hidden">
-      <div className="left w-2/3 font-bold flex flex-col justify-center">
+    <div className=" main bg-black pt-16 px-20 pb-8 max-w-screen min-h-[100vh] flex lg:flex-row-reverse flex-col  overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, scale: 0, right: "-200px" }}
+        whileInView={{ opacity: 1, scale: 1, right: "0px" }}
+        transition={{ duration: 0.6 }}
+        className="home right lg:h-screen flex justify-center items-center relative"
+      >
+        <img
+          src={mikeyImage}
+          alt=""
+          className="relative lg:h-screen lg:scale-150 -top-20 "
+        />
+      </motion.div>
+      <div className="left lg:w-2/3 font-bold flex flex-col sm:text-center justify-center">
         <h1 className="text-5xl">Welcome!!!</h1>
         <br />
         <div className="flex items-center mb-16">
@@ -79,18 +91,6 @@ const Main = () => {
           </a>
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, scale: 0, right: "-200px" }}
-        whileInView={{ opacity: 1, scale: 1, right: "0px" }}
-        transition={{ duration: 0.6 }}
-        className="home right h-screen flex justify-center items-center relative"
-      >
-        <img
-          src={mikeyImage}
-          alt=""
-          className="relative -top-20 h-screen scale-150"
-        />
-      </motion.div>
     </div>
   );
 };

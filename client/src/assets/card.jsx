@@ -24,6 +24,7 @@ export function Card({ project, index }) {
         <p className="mt-2 text-sm text-gray-300 line-clamp-2">
           {project.description}
         </p>
+        <div className="flex justify-between">
         <Link
           to={project.link}
           className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white"
@@ -31,6 +32,14 @@ export function Card({ project, index }) {
         >
           Visit Link &rarr;
         </Link>
+        <Link
+          to={project.github}
+          className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white"
+          target="blank"
+        >
+          View code &rarr;
+        </Link>
+        </div>
       </div>
     </motion.div>
   );
