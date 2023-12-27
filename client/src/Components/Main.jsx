@@ -45,7 +45,7 @@ const Main = () => {
         </div>
         <div className="text-lg">
           I am a passionate Software Engineering student specializing in React,
-          NextJs, JavaScript, Node.js, and MongoDB. Driven by inspiration drawn
+          NextJs, Tailwind, CSS, JavaScript, Node.js, and MongoDB. Driven by inspiration drawn
           from the captivating worlds of cybersecurity and web development, my
           purpose is to make positive contributions to my nation and humanity.
           Fueled by a fervor for chess and guided by a divine perspective, I
