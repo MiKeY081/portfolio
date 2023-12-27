@@ -3,7 +3,7 @@ export const projectData = [
     image: "/photos/ecommerceStore.png",
     title: "E-commerce Store",
     description: "Applying NextJS, React, Mongoose, MongoDB",
-    link: "https://ecommerce-4aq2p65n0-mikey081s-projects.vercel.app/",
+    link: "https://ecommerce-delta-rosy.vercel.app/",
   },
   {
     image: "/photos/todo.png",
