@@ -20,4 +20,18 @@ export const projectData = [
     link: "https://bookstore-seven-nu.vercel.app/",
     github: "https://github.com/MiKeY081/bookstore",
   },
+  {
+    image: "/photos/tictactoe.png",
+    title: "Book Store",
+    description: "Applying TML, CSS and JavaScript",
+    link: "https://tictactoe-self-psi.vercel.app/",
+    github: "https://github.com/MiKeY081/tictactoe",
+  },
+  {
+    image: "/photos/netflix.png",
+    title: "Netflix-Clne",
+    description: "Applying HTML, CSS and JavaScript",
+    link: "https://netflix-clone-lilac-eta.vercel.app/",
+    github: "https://github.com/MiKeY081/netflix-clone",
+  },
 ];
