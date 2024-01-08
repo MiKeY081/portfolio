@@ -18,13 +18,13 @@ const Footer = () => {
               href="https://www.youtube.com/channel/UCKRVpjLlFBLLXm-QAhDbkSg"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition duration-300"
+              className="contactIcons bottomLine"
             >
               <FaYoutube />
             </a>
             <a
               href="mailto:your.kcmadhu081@gmail.com"
-              className="text-blue-400 hover:text-blue-300 transition duration-300"
+              className="contactIcons bottomLine"
             >
               <FaEnvelope />
             </a>
@@ -32,7 +32,7 @@ const Footer = () => {
               href="https://www.facebook.com/Ryuga.081"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition duration-300"
+              className="contactIcons bottomLine"
             >
               <FaFacebook />
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
               href="https://www.instagram.com/madhu_kunwar081"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition duration-300"
+              className="contactIcons bottomLine"
             >
               <FaInstagram />
             </a>
@@ -48,7 +48,7 @@ const Footer = () => {
               href="https://github.com/MiKeY081"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition duration-300"
+              className="contactIcons bottomLine"
             >
               <FaGithub />
             </a>

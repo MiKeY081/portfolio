@@ -2,6 +2,7 @@ import React from "react";
 import mikeyImage from "../../public/photos/mikie.jpg";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
+import "../App.css"
 import {
   FaYoutube,
   FaEnvelope,
@@ -26,7 +27,7 @@ const Main = () => {
         />
       </motion.div>
       <div className="left lg:w-2/3 font-bold flex flex-col sm:text-center justify-center items-start">
-        <h1 className="text-5xl">Welcome!!!</h1>
+        <h1 className="text-5xl">Hello!!!</h1>
         <br />
         <div className="flex items-center mb-16">
           <span className="font-semibold text-4xl whitespace-nowrap">
@@ -35,7 +36,7 @@ const Main = () => {
           <div className="inline-block text-green-600 hover:text-green-700  text-6xl ">
             <Typewriter
               options={{
-                strings: ["Madhu kunwar", "A Web Developer"],
+                strings: ["Madhu kunwar", "A Web Developer", "Software Engineer"],
                 autoStart: true,
                 loop: true,
                 delay: 200,
@@ -43,25 +44,21 @@ const Main = () => {
             />
           </div>
         </div>
-        <div className="text-lg mb-16">
-          I am a passionate Software Engineering student specializing in React,
-          NextJs, Tailwind, CSS, JavaScript, Node.js, and MongoDB. Driven by inspiration drawn
-          from the captivating worlds of cybersecurity and web development, my
-          purpose is to make positive contributions to my nation and humanity.
-          Fueled by a fervor for chess and guided by a divine perspective, I
+        <div className="text-lg mb-8 text-start">
+          I am a passionate Software Engineering student specializing in Realm of Technology. Guided by a divine perspective, I
           enthusiastically explore the limitless potential that technology
           unfolds.
         </div>
         <a
           href="#contact"
-          className="bg-green-600 text-white rounded-lg px-4 py-2 w-fit mt-5 mb-2"
+          className="bg-green-600 text-white rounded-lg px-4 py-2 w-fit mt-5 mb-2 hover:bg-green-700 transition-all duration-300"
         >
           Contact Me
         </a>
         <div className="flex space-x-4">
           <a
             href="mailto:your.kcmadhu081@gmail.com"
-            className="text-blue-400 hover:text-blue-300 transition duration-300"
+            className="contactIcons bottomLine"
           >
             <FaEnvelope />
           </a>
@@ -69,7 +66,7 @@ const Main = () => {
             href="https://www.facebook.com/Ryuga.081"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition duration-300"
+            className="contactIcons bottomLine"
           >
             <FaFacebook />
           </a>
@@ -77,7 +74,7 @@ const Main = () => {
             href="https://www.instagram.com/madhu_kunwar081"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition duration-300"
+            className="contactIcons bottomLine"
           >
             <FaInstagram />
           </a>
@@ -85,7 +82,7 @@ const Main = () => {
             href="https://github.com/MiKeY081"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition duration-300"
+            className="contactIcons bottomLine"
           >
             <FaGithub />
           </a>

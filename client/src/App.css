@@ -1,0 +1,25 @@
+.headerlink{
+    @apply hover:text-blue-300 cursor-pointer transition-all duration-75
+}
+.bottomLine{
+    position: relative;
+    width: 100%;
+}
+.bottomLine::before{
+    content: '';
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 0%;
+    z-index: 10;
+    transition: 0.4s;
+}
+.bottomLine:hover::before{
+    width: 100%;
+}
+
+.contactIcons{
+    @apply text-blue-400 hover:text-blue-300 transition duration-300
+}
