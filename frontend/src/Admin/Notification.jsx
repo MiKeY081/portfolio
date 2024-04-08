@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const NotificationsPage = () => {
   const [messages, setMessages] = useState([]);
   const [unseenMessages, setUnseenMessages] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
 
   const handleBackToHome = (e) => {
@@ -21,6 +22,8 @@ const NotificationsPage = () => {
         setMessages(data.messages);
       } catch (error) {
         console.error("Error fetching messages:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -29,7 +32,7 @@ const NotificationsPage = () => {
 
   useEffect(() => {
     // Update unseen messages whenever messages change
-    setUnseenMessages(messages.filter((message) => !message.read));
+    setUnseenMessages(messages?.filter((message) => !message.read));
   }, [messages]);
 
   return (
@@ -37,7 +40,7 @@ const NotificationsPage = () => {
       <div className='max-w-3xl mx-auto'>
         <div className='flex justify-between items-center mb-8'>
           <h1 className='text-3xl font-bold'>
-            Messages ({unseenMessages.length})
+            Messages ({unseenMessages?.length && unseenMessages?.length})
           </h1>
           <button
             onClick={handleBackToHome}
@@ -46,16 +49,22 @@ const NotificationsPage = () => {
             Back to Portfolio
           </button>
         </div>
-        <div className='grid gap-6'>
-          {messages.map((message, index) => (
-            <NotificationCard
-              key={index}
-              id={message.id}
-              message={message}
-              setMessages={setMessages}
-            />
-          ))}
-        </div>
+        {isLoading ? (
+          <div className='flex w-screen h-screen '>Loading ...</div>
+        ) : messages ? (
+          <div className='grid gap-6'>
+            {messages?.map((message, index) => (
+              <NotificationCard
+                key={index}
+                id={message.id}
+                message={message}
+                setMessages={setMessages}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className='flex w-screen h-screen '>No Messages...</div>
+        )}
       </div>
     </div>
   );
