@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use("/api/v1", userRouter);
 app.use("/api/v1", messageRoute);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`sever is running on port ${PORT}`);
 });
