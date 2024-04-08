@@ -63,7 +63,7 @@ const NotificationsPage = () => {
             ))}
           </div>
         ) : (
-          <div className='flex w-screen h-screen '>No Messages...</div>
+          <div className='flex w-screen h-screen '>No Messages till now...</div>
         )}
       </div>
     </div>
