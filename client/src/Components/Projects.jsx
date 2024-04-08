@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../assets/card";
+import { Card } from "../assets/ProjectCard";
 import { projectData } from "../assets/constant";
 
 const Projects = () => {
