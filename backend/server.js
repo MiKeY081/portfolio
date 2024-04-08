@@ -11,7 +11,11 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "*"],
+    origin: [
+      "http://localhost:5173",
+      "*",
+      "https://portfolio-rho-snowy-20.vercel.app",
+    ],
     credentials: true,
   })
 );
