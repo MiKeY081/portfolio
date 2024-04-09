@@ -33,16 +33,13 @@ const Contact = () => {
     }
   };
   return (
-    <div
-      className='contact bg-black p-6 sm:p-12 md:p-16 pt-16 min-h-screen min-w-screen'
-      id='contact'
-    >
+    <div className='contact sm:p-12 md:p-16 mt-12' id='contact'>
       <h2 className='text-4xl sm:text-5xl lg:text-6xl font-semibold mb-10 text-center text-white'>
         Contact Me
       </h2>
       <div className='flex flex-col sm:flex-row'>
         <motion.div
-          initial={{ opacity: 0, scale: 0, left: "-200px" }}
+          initial={{ opacity: 0, scale: 0.8, left: "-200px" }}
           whileInView={{ opacity: 1, scale: 1, left: "0px" }}
           transition={{ duration: 0.6 }}
           className='relative w-full sm:w-1/2 mb-8 sm:mb-0'

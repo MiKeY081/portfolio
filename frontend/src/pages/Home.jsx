@@ -1,22 +1,18 @@
-import React from 'react'
-import Main from '../Components/Main'
-import About from '../Components/About'
-import Projects from '../Components/Projects'
-import Contact from '../Components/Contact'
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
+import React from "react";
+import Main from "../Components/Hero";
+import About from "../Components/About";
+import Projects from "../Components/Projects";
+import Contact from "../Components/Contact";
 
 const Home = () => {
   return (
-    <div className='scroll-smooth bg-black text-white text-2xl'>
-    <Header/>
-      <Main/>
-      <About/>
-      <Projects/>
-      <Contact/>
-    <Footer/>
+    <div className='scroll-smooth'>
+      <Main />
+      <About />
+      <Projects />
+      <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
