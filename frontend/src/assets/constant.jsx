@@ -1,5 +1,12 @@
 export const projectData = [
   {
+    image: "/photos/circleSync.png",
+    title: "Circle Sync",
+    description: "Applying React, Redux, NodeJs, MongoDB",
+    link: "https://sync-in-circle-frontend.vercel.app/",
+    github: "https://github.com/MiKeY081/CirlceSync",
+  },
+  {
     image: "/photos/ecommerceStore.png",
     title: "E-commerce Store",
     description: "Applying NextJS, React, Mongoose, MongoDB",

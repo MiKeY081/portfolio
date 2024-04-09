@@ -65,6 +65,7 @@ const Footer = () => {
           <span
             onClick={(e) => {
               handleToAdminLoginPage(e);
+              
             }}
           >
             &copy;
