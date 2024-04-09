@@ -14,12 +14,12 @@ const AboutMe = () => {
           initial={{ opacity: 0, scale: 0.9, left: "-200px" }}
           whileInView={{ opacity: 1, scale: 1, left: "0px" }}
           transition={{ duration: 0.6 }}
-          className='w-full lg:w-2/5 mb-8 lg:mb-0 flex justify-center items-center relative'
+          className='w-full lg:w-2/5 mb-8 lg:mb-0 flex justify-center items-center relative rounded-full'
         >
           <img
             src='/photos/aboutimage.jpg'
             alt=''
-            className='relative w-full max-w-xs md:max-w-md lg:max-w-full rounded-full h-full'
+            className='relative w-full max-w-xs md:max-w-md lg:max-w-full rounded-full object-contain scale-75'
           />
         </motion.div>
         <motion.div
