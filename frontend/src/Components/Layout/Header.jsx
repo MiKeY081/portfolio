@@ -10,9 +10,14 @@ function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <div className='flex justify-between items-center text-white px-2 py-1 bg-slate-800 h-12'>
+    <div className='flex justify-between items-center text-white px-2 py-1 bg-gray-36 h-12'>
       <RouterLink to='/' className='headerlink ml-8'>
-        Live Free
+        {/* <img src='/public/photos/logo.png' className='h-8'></img> */}
+        <p className='text-2xl text-green-700 whitespace-nowrap'>
+          {" "}
+          <span className='text-4xl text-green-600'>∫</span>life(happiness)
+          <span className='text-2xl text-green-600'>d(coding)</span>
+        </p>
       </RouterLink>
 
       <div className='hidden md:flex'>

@@ -37,7 +37,7 @@ const Contact = () => {
       <h2 className='text-4xl sm:text-5xl lg:text-6xl font-semibold mb-10 text-center text-white'>
         Contact Me
       </h2>
-      <div className='flex flex-col sm:flex-row'>
+      <div className='flex flex-col justify-center items-center'>
         <motion.div
           initial={{ opacity: 0, scale: 0.8, left: "-200px" }}
           whileInView={{ opacity: 1, scale: 1, left: "0px" }}
@@ -48,12 +48,16 @@ const Contact = () => {
             onSubmit={(e) => {
               handleSubmit(e);
             }}
-            className='relative p-4 sm:p-8 lg:px-20 rounded-lg shadow-md bg-slate-800'
+            className='py-4 px-2 lg:px-6 lg:py-12 rounded-lg shadow-md'
           >
-            <div className='mb-4'>
+            <h2 className='text-2xl text-green-600 mb-20'>
+              Have or question or want to work together ?
+            </h2>
+            <div className='mb-4 relative'>
               <label
                 htmlFor='name'
-                className='block text-lg font-medium text-white'
+                className={`block text-lg font-medium text-gray-400 absolute top-1/2 left-2 transform -translate-y-1/2 transition-transform duration-100 
+      ${name ? "-translate-y-8 scale-75" : ""}`}
               >
                 Name
               </label>
@@ -63,13 +67,15 @@ const Contact = () => {
                 name='name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className='mt-1 p-2 w-full border border-gray-500 text-white outline-none rounded-md focus:outline-none bg-slate-800'
+                className='p-2 w-full border border-gray-500 text-white outline-none rounded-md focus:outline-none bg-gray-36'
               />
             </div>
-            <div className='mb-4'>
+
+            <div className=' relative mb-4'>
               <label
                 htmlFor='email'
-                className='block text-lg font-medium text-white'
+                className={`text-lg font-medium text-gray-400 absolute top-1/2 left-2 transform -translate-y-1/2 transition-transform duration-100
+                 ${email ? "-translate-y-8 scale-75" : ""}`}
               >
                 Email
               </label>
@@ -79,13 +85,14 @@ const Contact = () => {
                 name='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className='mt-1 p-2 w-full border border-gray-500 text-white outline-none rounded-md focus:outline-none bg-slate-800'
+                className='p-2 w-full border border-gray-500 text-white outline-none rounded-md focus:outline-none bg-gray-36'
               />
             </div>
-            <div className='mb-4'>
+            <div className='relative mb-4'>
               <label
                 htmlFor='message'
-                className='block text-lg font-medium text-white'
+                className={`text-lg font-medium text-gray-400 absolute top-8 left-2 transform -translate-y-1/2 transition-transform duration-100 
+      ${message ? "-translate-y-9 scale-75" : ""}`}
               >
                 Message
               </label>
@@ -95,9 +102,10 @@ const Contact = () => {
                 rows='4'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className='mt-1 p-2 w-full border border-gray-500 text-white outline-none rounded-md focus:outline-none bg-slate-800'
+                className=' p-2 pt-4 w-full border border-gray-500 text-white outline-none rounded-md focus:outline-none bg-gray-36'
               ></textarea>
             </div>
+
             <button
               type='submit'
               className='bg-green-600 px-4 py-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring focus:border-blue-300'
@@ -106,7 +114,7 @@ const Contact = () => {
             </button>
           </form>
         </motion.div>
-        <div className='flex flex-col lg:flex-row sm:gap-32  justify-center items-center gap-4 w-full sm:w-1/2'>
+        {/* <div className='flex justify-around lg:flex-row sm:gap-32  md:justify-center items-center gap-4 w-full sm:w-1/2'>
           <a
             href='https://res.cloudinary.com/deqtuwtw5/image/upload/v1703339507/qdnczcsag3c9xw5jfzix.png'
             className='bg-green-600 px-4 py-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring focus:border-blue-300'
@@ -121,7 +129,7 @@ const Contact = () => {
           >
             Hire Me
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

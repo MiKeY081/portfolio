@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className='bg-gray-800 text-white py-4 '>
+    <footer className='bg-gray-36 text-white py-4 '>
       <div className='container mx-auto flex items-center justify-between'>
         <div className='flex justify-center items-center gap-4'>
           <p className='text-sm'>Connect with me:</p>
@@ -65,7 +65,6 @@ const Footer = () => {
           <span
             onClick={(e) => {
               handleToAdminLoginPage(e);
-              
             }}
           >
             &copy;

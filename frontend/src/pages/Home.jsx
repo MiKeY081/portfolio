@@ -4,12 +4,14 @@ import About from "../Components/About";
 import Projects from "../Components/Projects";
 import Contact from "../Components/Contact";
 import ScrollToTopButton from "../assets/Hammer";
+import Skills from "../Components/Skills";
 
 const Home = () => {
   return (
     <div className='scroll-smooth'>
       <Main />
       <About />
+      <Skills />
       <Projects />
       <Contact />
       <ScrollToTopButton />

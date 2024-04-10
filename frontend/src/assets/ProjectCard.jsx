@@ -11,8 +11,8 @@ export function Card({ project, index }) {
       initial={{ opacity: 0, bottom: "-200px" }}
       whileInView={{ opacity: 1, bottom: "0px" }}
       transition={{
-        duration: 0.5,
-        delay: (index * 1.2 + 3) / 10,
+        duration: 0.3,
+        delay: (index * 1.2 + 1) / 10,
         bounce: 1,
       }}
       className='relative h-[400px] w-[300px] rounded-md cursor-grab'

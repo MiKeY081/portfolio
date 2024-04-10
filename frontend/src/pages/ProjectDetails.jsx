@@ -27,10 +27,10 @@ const ProjectDetails = () => {
 
   return (
     <div className='bg-black min-h-screen flex items-center justify-center '>
-      <div className='p-8 bg-green-500 rounded-lg shadow-xl flex md:p-12'>
-        <div className='relative w-full md:w-2/3'>
+      <div className='py-8 px-4 bg-black rounded-lg shadow-xl flex lg:flex-row flex-col text-white'>
+        <div className='relative w-full lg:w-2/3'>
           <Swiper
-            className='w-full h-96 md:h-auto'
+            className='md:h-[500px] md:w-[800px] w-80 h-96 mb-4 md:mb-0 bg-black text-white rounded-lg'
             modules={[
               Navigation,
               Pagination,
@@ -50,30 +50,46 @@ const ProjectDetails = () => {
           >
             {project.images.map((image, index) => (
               <SwiperSlide key={index}>
-                <div className=''>
-                  <img
-                    src={image}
-                    className='w-full h-full object-cover rounded-lg'
-                    alt={`Project Slide ${index + 1}`}
-                  />
-                </div>
+                <img
+                  src={image}
+                  className='w-full h-full object-cover rounded-lg'
+                  alt={`Project Slide ${index + 1}`}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
         <div className='w-full md:w-1/3 md:pl-8'>
-          <h2 className='text-3xl font-bold text-black mb-4'>
-            {project.title}
-          </h2>
-          <p className='text-lg text-black mb-6'>{project.description}</p>
-          <div className='flex flex-col gap-4 text-xl text-black mb-6'>
+          <h2 className='text-3xl font-bold  mb-2'>{project.title}</h2>
+          <div className='flex flex-col items-start gap-4 mb-4'>
+            <h3 className='text-xl font-semibold  mb-2'>Technologies</h3>
+            <p className='text-lg '>{project.description}</p>
+            <p className='text-md font-bold'>Complexity level:</p>
+            <div className='flex flex-wrap gap-4'>
+              {project.technologies.map((tech, index) => (
+                <div
+                  key={tech.name}
+                  className='grid grid-cols-2 mb-4 rounded-full w-full'
+                >
+                  <div className='text-xl'>{tech.name}</div>
+                  <div className='flex items-center w-full bg-green-900 rounded-full overflow-hidden'>
+                    <div
+                      style={{ width: `${tech.level}%` }}
+                      className='bg-green-500 h-full '
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className='flex flex-col gap-4 text-xl  mb-6'>
             <p className='font-semibold'>Description</p>
             <p>{project.moreDescription}</p>
           </div>
           <div className='flex justify-between'>
             <a
               href={project.link}
-              className='flex items-center text-black hover:text-green-300 transition duration-300'
+              className='flex items-center  hover:text-green-300 transition duration-300'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -82,7 +98,7 @@ const ProjectDetails = () => {
             </a>
             <a
               href={project.github}
-              className='flex items-center text-black hover:text-green-300 transition duration-300'
+              className='flex items-center  hover:text-green-300 transition duration-300'
               target='_blank'
               rel='noopener noreferrer'
             >

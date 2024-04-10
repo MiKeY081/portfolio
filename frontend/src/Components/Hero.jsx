@@ -13,11 +13,11 @@ import {
 
 const Main = () => {
   return (
-    <div className=' main px-20 max-w-screen flex lg:flex-row-reverse flex-col  overflow-hidden'>
+    <div className=' main px-20 max-w-screen flex lg:flex-row-reverse flex-col  overflow-hidden mb-10'>
       <motion.div
         initial={{ opacity: 0, scale: 0.8, right: "-200px" }}
         whileInView={{ opacity: 1, scale: 1, right: "0px" }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.3 }}
         className='home right lg:h-screen flex justify-center items-center relative'
       >
         <img
@@ -26,14 +26,14 @@ const Main = () => {
           className='relative lg:h-screen lg:scale-150 -top-20 '
         />
       </motion.div>
-      <div className='left lg:w-2/3 font-bold flex flex-col sm:text-center justify-center items-start'>
-        <h1 className='text-5xl'>Hello!!!</h1>
+      <div className='left lg:w-2/3 font-bold flex flex-col justify-center items-start'>
+        <h1 className='lg:text-5xl text-3xl'>Hello!!!</h1>
         <br />
-        <div className='flex items-center mb-16'>
-          <span className='font-semibold text-4xl whitespace-nowrap'>
+        <div className='flex flex-col mb-16'>
+          <span className='md:block font-semibold md:text-4xl  text-2xl md:whitespace-nowrap'>
             I am &nbsp;
           </span>
-          <div className='inline-block text-green-600 hover:text-green-700  text-6xl '>
+          <div className='inline-block text-green-600 hover:text-green-700  md:text-4xl  text-3xl '>
             <Typewriter
               options={{
                 strings: [
