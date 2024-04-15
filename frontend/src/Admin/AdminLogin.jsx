@@ -21,7 +21,7 @@ const AdminLogin = () => {
         toast.error("Backoff man!!!");
       }
     } catch (error) {
-      console.log(data.message || "Something went wrong!");
+      console.log("Something went wrong!");
     }
   };
 
