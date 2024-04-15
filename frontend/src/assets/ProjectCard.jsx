@@ -20,7 +20,7 @@ export function Card({ project, index }) {
       <img
         src={project.images[0]}
         alt={project.title}
-        className='h-full w-full rounded-md object-cover cursor-pointer'
+        className='h-full w-full rounded-md object-contain cursor-pointer'
       />
 
       <div

@@ -1,10 +1,10 @@
 export const projectData = [
   {
-    images: ["/photos/circleSync.png", "/photos/ecommerceStore.png"],
+    images: ["/photos/circleSyncHome.png", "/photos/circleSyncProfile.png"],
     title: "Circle Sync",
     description: "Applying React, NodeJs, MongoDB",
     moreDescription:
-      "Circle Sync is a collaborative task management application designed to showcase my proficiency in building full-stack web applications. With real-time synchronization and seamless task assignment features, it demonstrates my expertise in working with React, Node.js, and MongoDB to create efficient and scalable solutions.",
+      "Circle Sync is a socila media application designed to showcase my proficiency in building full-stack web applications. With real-time synchronization and seamless task assignment features, it demonstrates my expertise in working with React, Node.js, and MongoDB to create efficient and scalable solutions. This consists of features like CRUD user, post and comment, like, follow, unfollow, search, and real-time notification. Sharing thoughts, images, and following other users are some of the features of this application. ",
     link: "https://sync-in-circle-frontend.vercel.app/",
     github: "https://github.com/MiKeY081/CirlceSync",
     technologies: [
