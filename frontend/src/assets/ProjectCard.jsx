@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
+//project card component
 export function Card({ project, index }) {
   const navigate = useNavigate();
   return (

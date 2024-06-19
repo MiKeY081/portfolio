@@ -3,6 +3,8 @@ import bcrypt from "bcrypt";
 import matchPassword from "../utils/bcrypt.js";
 import jwt from "jsonwebtoken";
 
+//user register, login and delete controller
+
 const userRegister = async (req, res) => {
   const { email, password } = req.body;
   try {

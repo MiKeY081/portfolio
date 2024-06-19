@@ -6,9 +6,12 @@ import cookieParser from "cookie-parser";
 import { userRouter } from "./routes/userRoute.js";
 import { messageRoute } from "./routes/messageRoute.js";
 
+//dotenv configuration
 config();
+
 const app = express();
 
+//cors policy
 app.use(
   cors({
     origin: [
@@ -18,14 +21,19 @@ app.use(
     credentials: true,
   })
 );
+
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cookieParser());
 
+//setting up route
 app.use("/api/v1", userRouter);
 app.use("/api/v1", messageRoute);
 
+
 const PORT = process.env.PORT || 3000;
+
+//listening port
 app.listen(PORT, () => {
   console.log(`sever is running on port ${PORT}`);
 });

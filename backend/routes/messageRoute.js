@@ -8,6 +8,7 @@ import isSignedIn from "../middleware/userMiddleware.js";
 
 const router = Router();
 
+//setting up api calls
 router.get("/message/get", isSignedIn, getMessage);
 router.post("/message/create", createMessage);
 router.put("/message/read", isSignedIn, readMessage);

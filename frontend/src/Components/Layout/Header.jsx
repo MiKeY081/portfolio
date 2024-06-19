@@ -6,6 +6,7 @@ import Menu from "../Menu";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // For responsive display
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 

@@ -8,6 +8,7 @@ import {
 
 const router = Router();
 
+//setting up api calls
 router.post("/user/register", userRegister);
 router.post("/user/login", userLogin);
 router.delete("/user/delete", isSignedIn, deleteUser);

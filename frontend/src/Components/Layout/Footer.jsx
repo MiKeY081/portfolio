@@ -10,6 +10,8 @@ import {
 
 const Footer = () => {
   const navigate = useNavigate();
+
+  //For entering to admin page
   const handleToAdminLoginPage = (e) => {
     e.preventDefault();
     navigate("/admin/login");

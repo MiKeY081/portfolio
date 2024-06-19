@@ -3,6 +3,7 @@ import { Card } from "../assets/ProjectCard";
 import { projectData } from "../assets/constant";
 
 const Projects = () => {
+  //importing projectData 
   const projects = projectData;
 
   return (

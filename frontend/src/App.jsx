@@ -10,6 +10,8 @@ import NotificationsPage from "./Admin/Notification";
 import ProjectDetails from "./pages/ProjectDetails";
 import Layout from "./Components/Layout/Layout";
 
+
+//setting up route for navigation
 function App() {
   return (
     <>

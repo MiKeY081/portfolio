@@ -1,5 +1,6 @@
 import prisma from "../config/prismaconfig.js";
 
+// get, create and delete message controller
 const getMessage = async (req, res) => {
   try {
     const messages = await prisma.message.findMany({

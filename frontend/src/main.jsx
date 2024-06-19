@@ -7,6 +7,7 @@ import axios from "axios";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+//setting up axios baseUrl and credentials
 axios.defaults.baseURL = "https://portfolio-czaw.vercel.app/api/v1";
 axios.defaults.withCredentials = true;
 

@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 
+//comparting hasedPassword with orginal password
 const matchPassword = async (password, hashedPassword) => {
   try {
     const matched = await bcrypt.compare(password, hashedPassword);

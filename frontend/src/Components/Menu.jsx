@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import "../App.css";
 
+//responsive menu bar for small screens
 const Menu = ({ isOpen, onClose }) => {
   return (
     <div
@@ -19,44 +21,44 @@ const Menu = ({ isOpen, onClose }) => {
       </div>
       <ul className='flex flex-col items-center'>
         <li className='mb-4'>
-          <Link
-            to='main'
+          <RouterLink
+            to='/'
             smooth
             onClick={onClose}
             className='headerlink bottomLine'
           >
             Home
-          </Link>
+          </RouterLink>
         </li>
         <li className='mb-4'>
-          <Link
+          <ScrollLink
             to='about'
             smooth
             onClick={onClose}
             className='headerlink bottomLine'
           >
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li className='mb-4'>
-          <Link
+          <ScrollLink
             to='projects'
             smooth
             onClick={onClose}
             className='headerlink bottomLine'
           >
             Projects
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link
+          <ScrollLink
             to='contact'
             smooth
             onClick={onClose}
             className='headerlink bottomLine'
           >
             Contact
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
     </div>

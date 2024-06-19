@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+//Skills page
 const Skills = () => {
+  //level of skills acquired
   const skills = [
     { name: "HTML", level: 95 },
     { name: "CSS", level: 85 },
