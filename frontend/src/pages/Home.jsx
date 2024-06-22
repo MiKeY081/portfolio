@@ -8,7 +8,7 @@ import Skills from "../Components/Skills";
 
 const Home = () => {
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth w-screen overflow-hidden'>
       <Main />
       <About />
       <Skills />

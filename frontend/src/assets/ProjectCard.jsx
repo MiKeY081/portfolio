@@ -16,7 +16,7 @@ export function Card({ project, index }) {
         delay: (index * 1.2 + 1) / 10,
         bounce: 1,
       }}
-      className='relative h-[300px] w-[500px] rounded-md cursor-grab'
+      className='relative h-[300px] w-[300px] md:w-[500px] lg:w-[500px] rounded-md cursor-grab'
     >
       <img
         src={project.images[0]}
