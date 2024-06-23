@@ -94,7 +94,7 @@ const ProjectDetails = () => {
               rel='noopener noreferrer'
             >
               <FiExternalLink className='mr-2' />
-              <span className='text-lg'>Visit Website</span>
+              <span className='text-lg text-green-600'>Visit Website</span>
             </a>
             <a
               href={project.github}

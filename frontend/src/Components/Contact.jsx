@@ -51,7 +51,7 @@ const Contact = () => {
             className='py-4 px-2 lg:px-6 lg:py-12 rounded-lg shadow-md'
           >
             <h2 className='text-2xl text-green-600 mb-20'>
-              Have or question or want to work together ?
+              Have a question or want to work together ?
             </h2>
             <div className='mb-4 relative'>
               <label

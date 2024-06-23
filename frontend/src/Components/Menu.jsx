@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import "../App.css";
+import Terminal from "../assets/Terminal";
 
 //responsive menu bar for small screens
 const Menu = ({ isOpen, onClose }) => {
   return (
     <div
-      className={`fixed inset-0 bg-opacity-80 z-50 ${
+      className={`fixed inset-0 bg-slate-700 bg-opacity-40 z-50 ${
         isOpen ? "block" : "hidden"
       }`}
     >
@@ -21,14 +22,7 @@ const Menu = ({ isOpen, onClose }) => {
       </div>
       <ul className='flex flex-col items-center'>
         <li className='mb-4'>
-          <RouterLink
-            to='/'
-            smooth
-            onClick={onClose}
-            className='headerlink bottomLine'
-          >
-            Home
-          </RouterLink>
+          <Terminal />
         </li>
         <li className='mb-4'>
           <ScrollLink

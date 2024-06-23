@@ -40,7 +40,7 @@ export function Card({ project, index }) {
         <div className='flex gap-20'>
           <Link
             to={project.link}
-            className='mt-2 w-24 justify-center inline-flex cursor-pointer items-center text-sm font-semibold text-white hover:text-blue-400 bottomLine'
+            className='mt-2 w-24 justify-center inline-flex cursor-pointer items-center text-sm font-semibold text-green-500 hover:text-blue-400 bottomLine'
             target='blank'
           >
             Visit Link &nbsp; <FaExternalLinkAlt />
