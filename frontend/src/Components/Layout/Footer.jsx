@@ -18,10 +18,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className='bg-gray-36 text-white py-4 '>
+    <footer className='bg-gray-36 text-white lg:py-4 sm:py2'>
       <div className='container mx-auto flex items-center justify-between'>
         <div className='flex justify-center items-center gap-4'>
-          <p className='text-sm'>Connect with me:</p>
+          <p className='text-sm hidden lg:flex'>Connect with me:</p>
           <div className='flex space-x-4'>
             <a
               href='https://www.youtube.com/channel/UCKRVpjLlFBLLXm-QAhDbkSg'
@@ -63,7 +63,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p className='text-sm'>
+        <p className='text-sm font-semibold'>
           <span
             onClick={(e) => {
               handleToAdminLoginPage(e);
@@ -71,7 +71,7 @@ const Footer = () => {
           >
             &copy;
           </span>{" "}
-          2003 Madhu Kunwar All rights reserved.
+          2003 All rights reserved.
         </p>
       </div>
     </footer>
