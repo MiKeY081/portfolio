@@ -51,6 +51,9 @@ export default function Terminal() {
       case "projects":
         navigate("/projects");
         return "Navigating to Projects page...";
+      case "admin":
+        navigate("/admin/login");
+        return "Navigating to Admin Login page ...";
       case "help":
         return "Available commands: about, home, main, contact, projects, help, clear, exit";
       case "exit":
