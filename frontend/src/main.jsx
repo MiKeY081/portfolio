@@ -8,10 +8,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 //setting up axios baseUrl and credentials
-axios.defaults.baseURL = "https://madhukunwar.com.np";
+axios.defaults.baseURL = "https://portfolio-czaw.vercel.app";
 axios.defaults.withCredentials = true;
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+https: ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <ToastContainer />
     <App />
