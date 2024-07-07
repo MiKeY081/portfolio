@@ -1,6 +1,11 @@
 export const projectData = [
   {
-    images: ["/photos/circleSyncHome.png", "/photos/circleSyncProfile.png"],
+    images: [
+      "/photos/circlesyncpage.jpeg",
+      "/photos/circlesync2.jpeg",
+      "/photos/circlesync3.jpeg",
+      "/photos/circlesync4.jpeg",
+    ],
     title: "Circle Sync",
     description: "Applying React, NodeJs, MongoDB",
     moreDescription:
@@ -11,14 +16,19 @@ export const projectData = [
       { name: "React", level: 95 },
       { name: "Node.js", level: 90 },
       { name: "MongoDB", level: 90 },
+      { name: "Tailwind", level: 100 },
     ],
   },
   {
-    images: ["/photos/ecommerceStore.png"],
+    images: [
+      "/photos/ecommercepage.jpeg",
+      "/photos/ecommerce2.jpeg",
+      "/photos/ecommerce3.jpeg",
+    ],
     title: "E-commerce Store",
     description: "Applying NextJS, React, Mongoose, MongoDB",
     moreDescription:
-      "E-commerce Store is a sophisticated online retail platform that demonstrates my skills in building complex web applications. With features like user authentication, product search, and secure payment processing, it showcases my ability to leverage Next.js, React, and MongoDB to create dynamic and interactive user experiences.",
+      "E-commerce Store is a sophisticated online retail platform that demonstrates my skills in building complex web applications. With features like user authentication through NextAuth, product search, and secure payment processing, adding items to cart, it showcases my ability to leverage Next.js, React, mongoose, MongoDB, tailwind to create dynamic and interactive user experiences.",
     link: "https://ecommerce-delta-rosy.vercel.app/",
     github: "https://github.com/MiKeY081/ecommerce",
     technologies: [
@@ -26,25 +36,25 @@ export const projectData = [
       { name: "React", level: 85 },
       { name: "Mongoose", level: 80 },
       { name: "MongoDB", level: 80 },
+      { name: "Tailwind", level: 100 },
     ],
   },
   {
-    images: ["/photos/todo.png"],
-    title: "Todo app",
-    description: "Applying React, Mongoose, NodeJs, MongoDB",
+    images: ["/photos/menupage.jpeg", "/photos/menu2.jpeg"],
+    title: "Menu",
+    description: "Applying HTML, CSS, JavaScript",
     moreDescription:
-      "Todo app is a practical task management tool that highlights my proficiency in building efficient backend systems and intuitive user interfaces. With features such as task prioritization, deadline tracking, and user authentication, it showcases my expertise in full-stack development using React, Node.js, and MongoDB.",
-    link: "https://todofollowup.vercel.app/",
-    github: "https://github.com/MiKeY081/todofollowup",
+      "Menu is a simple website created using plain vanilla javascript. This project is to showcase the basics functionality of javascript for filtering, joining items, adding classes and many more. In this project, plain CSS is used to decorate this page.",
+    link: "https://menu-five-topaz.vercel.app/",
+    github: "https://github.com/MiKeY081/menu",
     technologies: [
-      { name: "React", level: 95 },
-      { name: "Node.js", level: 90 },
-      { name: "Mongoose", level: 80 },
-      { name: "MongoDB", level: 80 },
+      { name: "HTML", level: 10 },
+      { name: "CSS", level: 85 },
+      { name: "JavaScript", level: 95 },
     ],
   },
   {
-    images: ["/photos/bookstore.png"],
+    images: ["/photos/bookstorepage.jpeg", "/photos/bookstore2.jpeg"],
     title: "Book Store",
     description: "Applying React, Mongoose, NodeJs, MongoDB",
     moreDescription:
@@ -56,10 +66,11 @@ export const projectData = [
       { name: "Node.js", level: 90 },
       { name: "Mongoose", level: 80 },
       { name: "MongoDB", level: 80 },
+      { name: "Tailwind", level: 100 },
     ],
   },
   {
-    images: ["/photos/tictactoe.png"],
+    images: ["/photos/tictactoe.png", "/photos/tictactoe2.jpeg"],
     title: "Tic Tac Toe",
     description: "Applying HTML, CSS, JavaScript",
     moreDescription:
@@ -73,7 +84,11 @@ export const projectData = [
     ],
   },
   {
-    images: ["/photos/netflix.png"],
+    images: [
+      "/photos/netflixpage.jpeg",
+      "/photos/netflix2.jpeg",
+      "/photos/netflix3.jpeg",
+    ],
     title: "Netflix Clone",
     description: "Applying HTML, CSS, JavaScript",
     moreDescription:
