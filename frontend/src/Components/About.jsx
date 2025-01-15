@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const AboutMe = () => {
@@ -41,7 +40,7 @@ const AboutMe = () => {
           </p>
           <p className='mb-4 text-white'>
             In my academic journey, I've gained skills in frontend technologies
-            such as React, Next.js, HTML, CSS, and Tailwind. On the backend, I'm
+            such as React, Next.js, HTML, typescript, javascript, CSS, and Tailwind. On the backend, I'm
             familiar with Mongoose, Prisma, MongoDB, and Node.js.
           </p>
           <p className='mb-4 text-white'>

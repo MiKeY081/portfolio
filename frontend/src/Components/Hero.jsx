@@ -4,7 +4,6 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import "../App.css";
 import {
-  FaYoutube,
   FaEnvelope,
   FaFacebook,
   FaInstagram,
